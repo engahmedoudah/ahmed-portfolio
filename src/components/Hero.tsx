@@ -1,24 +1,34 @@
-
 import { ArrowDownToLine } from "lucide-react";
 import education from "../data/education.json";
 import personal from "../data/personal.json";
 import projects from "../data/projects.json";
 import site from "../data/site.json";
 import skills from "../data/skills.json";
-import cvUrl from "../assets/cv/Ahmed-Al-Ghamdi-CV.pdf?url";
+import cvUrl from "../assets/cv/Ahmed Al Ghamdi - CV.pdf";
 
 const Hero = () => {
-  const stats = [projects.items.length, skills.items.length, education.items.length];
+  const stats = [
+    projects.items.length,
+    skills.items.length,
+    education.items.length,
+  ];
 
   return (
     <section className="hero page-width" id="home" aria-labelledby="hero-title">
       <div className="hero-copy">
-        <p className="eyebrow"><span className="eyebrow-mark" />{site.heroKicker}</p>
+        <p className="eyebrow">
+          <span className="eyebrow-mark" />
+          {site.heroKicker}
+        </p>
         <h1 id="hero-title">{personal.name}</h1>
         <p className="hero-role">{personal.title}</p>
         <p className="hero-summary">{personal.summary}</p>
         <div className="hero-actions">
-          <a className="button button-primary" href={cvUrl} download="Ahmed-Al-Ghamdi-CV.pdf">
+          <a
+            className="button button-primary"
+            href={cvUrl}
+            download="Ahmed-Al-Ghamdi-CV.pdf"
+          >
             <ArrowDownToLine size={17} aria-hidden="true" />
             {site.downloadCv}
           </a>
@@ -29,7 +39,10 @@ const Hero = () => {
           <span className="eyebrow">{site.profileIndex}</span>
         </div>
         <div className="index-monogram" aria-hidden="true">
-          {personal.name.split(" ").map((part) => part[0]).join("")}
+          {personal.name
+            .split(" ")
+            .map((part) => part[0])
+            .join("")}
         </div>
         <div className="profile-stats">
           {site.stats.map((label, index) => (

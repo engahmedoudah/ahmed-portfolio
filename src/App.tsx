@@ -12,7 +12,9 @@ import personal from "./data/personal.json";
 function App() {
   useEffect(() => {
     document.title = `${personal.name} | ${personal.title}`;
-    document.querySelector('meta[name="description"]')?.setAttribute("content", personal.summary);
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", personal.summary);
   }, []);
 
   return (
