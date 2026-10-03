@@ -4,7 +4,6 @@ import personal from "../data/personal.json";
 import projects from "../data/projects.json";
 import site from "../data/site.json";
 import skills from "../data/skills.json";
-import cvUrl from "../assets/cv/Ahmed Al Ghamdi - CV.pdf";
 
 const Hero = () => {
   const stats = [
@@ -26,7 +25,7 @@ const Hero = () => {
         <div className="hero-actions">
           <a
             className="button button-primary"
-            href={cvUrl}
+            href="/cv/Ahmed-Al-Ghamdi-CV.pdf"
             download="Ahmed-Al-Ghamdi-CV.pdf"
           >
             <ArrowDownToLine size={17} aria-hidden="true" />
