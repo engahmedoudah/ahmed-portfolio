@@ -1,18 +1,13 @@
-import { useLanguage } from '../context/LanguageContext';
+import personal from "../data/personal.json";
+import site from "../data/site.json";
 
 const Footer = () => {
-    const { t } = useLanguage();
-
     return (
-        <footer className="footer" style={{ padding: '2rem 0', borderTop: '1px solid var(--border-color)', marginTop: '4rem' }}>
-            <div className="container text-center">
-                <p style={{ color: 'var(--text-secondary)' }}>
-                    {t('footer.rights')}
-                </p>
+        <footer className="site-footer">
+            <div className="footer-inner page-width">
+                <span>{site.copyrightPrefix} {new Date().getFullYear()} {personal.name}</span>
+                <a href="#home">{site.backToTop} <span aria-hidden="true">↑</span></a>
             </div>
-            <style>{`
-        .text-center { text-align: center; }
-      `}</style>
         </footer>
     );
 };

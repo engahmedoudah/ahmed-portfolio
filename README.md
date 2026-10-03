@@ -26,6 +26,21 @@ This website serves as my personal portfolio as a Full-Stack Developer. It showc
 * CSS
 * Vite
 
+## Updating the Portfolio
+
+Portfolio copy and links are stored in `src/data/`:
+
+* `personal.json` — name, title, summary, and about text
+* `skills.json` — skills shown in the toolkit section
+* `projects.json` — project descriptions, technologies, and optional links/images
+* `education.json` — education entries
+* `social.json` — direct email, LinkedIn, and GitHub links
+* `site.json` — navigation, section labels, and interface copy
+
+Project `github`, `demo`, and `image` values can remain empty when no public URL or image is available. The static CV download is `src/assets/cv/Ahmed-Al-Ghamdi-CV.pdf`.
+
+Run locally with `npm ci` and `npm run dev`. Verify with `npm run build` and `npm run lint`.
+
 ## Projects
 
 ### E-Commerce Admin Dashboard

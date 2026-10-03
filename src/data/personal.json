@@ -1,0 +1,12 @@
+{
+  "name": "Ahmed Al Ghamdi",
+  "title": "Junior Full Stack Developer",
+  "email": "engahmedoudah@gmail.com",
+  "summary": "Computer Science graduate focused on full-stack web applications, from clear interfaces to dependable backend and database systems.",
+  "aboutTitle": "About",
+  "about": [
+    "Computer Science graduate from Albaha University, working across the frontend, backend, and database layers of web applications.",
+    "Recent work includes e-commerce administration, note-taking, and database code generation.",
+    "I focus on maintainable architecture, clear interfaces, and dependable application behavior."
+  ]
+}

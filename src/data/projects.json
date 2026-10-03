@@ -1,0 +1,29 @@
+{
+  "title": "Selected projects",
+  "items": [
+    {
+      "name": "E-Commerce Admin Dashboard",
+      "description": "Full-stack administration for products, categories, orders, and users, with JWT authentication and role-based access control.",
+      "technologies": ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
+      "github": "",
+      "demo": "",
+      "image": ""
+    },
+    {
+      "name": "ThinkBoard",
+      "description": "A full-stack note-taking application with note creation, editing, deletion, detail views, and MongoDB persistence.",
+      "technologies": ["MERN", "TypeScript", "REST API"],
+      "github": "",
+      "demo": "",
+      "image": ""
+    },
+    {
+      "name": "Database Code Generator",
+      "description": "Desktop application for generating database-related code with SQL Server and ADO.NET integration.",
+      "technologies": ["C#", ".NET", "SQL Server", "ADO.NET"],
+      "github": "",
+      "demo": "",
+      "image": ""
+    }
+  ]
+}

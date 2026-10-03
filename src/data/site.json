@@ -1,0 +1,19 @@
+{
+  "navigation": [
+    { "label": "About", "href": "#about" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Education", "href": "#education" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "heroKicker": "DEVELOPER PROFILE",
+  "profileIndex": "PROFILE / 01",
+  "sectionMarkers": ["BACKGROUND", "TOOLKIT", "WORK", "STUDY", "CONTACT"],
+  "stats": ["Projects", "Skills", "Education"],
+  "downloadCv": "Download CV",
+  "contactAction": "",
+  "githubAction": "GitHub",
+  "demoAction": "Live demo",
+  "backToTop": "Back to top",
+  "copyrightPrefix": "Copyright"
+}

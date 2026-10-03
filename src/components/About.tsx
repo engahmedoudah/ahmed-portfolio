@@ -1,30 +1,17 @@
 
-import { useLanguage } from '../context/LanguageContext';
+import personal from "../data/personal.json";
+import site from "../data/site.json";
 
 const About = () => {
-    const { t } = useLanguage();
-    const description = t('about.description');
-
     return (
-        <section id="about" className="section" style={{ padding: '4rem 0' }}>
-            <div className="container">
-                <h2 className="section-title">{t('about.title')}</h2>
-                <div className="about-content">
-                    {Array.isArray(description) && description.map((paragraph: string, index: number) => (
-                        <p key={index} className="about-text">
-                            {paragraph}
-                        </p>
-                    ))}
-                </div>
+        <section className="content-section page-width" id="about" aria-labelledby="about-title">
+            <div className="section-heading">
+                <p className="eyebrow">01 / {site.sectionMarkers[0]}</p>
+                <h2 id="about-title">{personal.aboutTitle}</h2>
             </div>
-            <style>{`
-        .about-text {
-          margin-bottom: 1rem;
-          font-size: 1.1rem;
-          color: var(--text-secondary);
-          max-width: 800px;
-        }
-      `}</style>
+            <div className="about-copy">
+                {personal.about.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            </div>
         </section>
     );
 };
