@@ -13,7 +13,16 @@ const Navbar = () => {
   return (
     <header className="site-header">
       <nav className="nav-wrap page-width" aria-label="Main navigation">
-        <a className="brand" href="#home" aria-label={`${personal.name}, home`}>
+        <a
+          className="brand"
+          href="#home"
+          aria-label={`${personal.name}, home`}
+          onClick={(event) => {
+            event.preventDefault();
+            window.location.hash = "home";
+            window.location.reload();
+          }}
+        >
           <span className="brand-mark" aria-hidden="true">
             {initials}
           </span>
